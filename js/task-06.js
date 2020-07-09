@@ -1,12 +1,20 @@
+let message;
+let input;
+let total = 0;
 
+while (true) {
+  let input = prompt("Введите число");
 
+  if (input === null) {
+    message = (`Общая сумма чисел равна ${total}`);
+    alert(message);
+    break;
+  }
 
-
-
-
-
-
-
+  input = Number(input);
+  total += input;
+}
+console.log(message);
 
 // Напиши скрипт который просит посетителя ввести число в prompt до тех пор, пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме.
 
