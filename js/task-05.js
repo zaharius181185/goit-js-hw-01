@@ -1,9 +1,39 @@
+let price;
+const message = "В Вашей стране доставка не доступна.";
 
+let userInput = prompt ('В какую страну сделать доставку товара?');
+userInput = userInput.toLowerCase();
 
+switch(userInput) {
+    case 'китай':
+        price = 100 
+        console.log(`Доставка в ${userInput} будет стоить ${price} кредитов`);
+        break;
 
+    case 'чили':
+        price = 250;
+        console.log(`Доставка в ${userInput} будет стоить ${price} кредитов`);
+        break;
 
+    case 'австралия':
+        price = 170;
+        console.log(`Доставка в ${userInput} будет стоить ${price} кредитов`);
+        break;
 
+    case 'индия':
+        price = 80;
+        console.log(`Доставка в ${userInput} будет стоить ${price} кредитов`);
+        break;
 
+    case 'ямайка':
+        price = 120;
+        console.log(`Доставка в ${userInput} будет стоить ${price} кредитов`);
+        break;
+
+    default:
+        console.log(message);
+        alert(message);
+}
 
 // Пользователь может оформить доставку товара к себе в страну, указав ее при посещении страницы в prompt. Учти, пользователь может ввести имя страны не только буквами нижнего регистра, а к примеру 'кИтАЙ'.
 

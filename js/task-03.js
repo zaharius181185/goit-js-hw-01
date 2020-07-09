@@ -1,14 +1,18 @@
 const ADMIN_PASSWORD = 'jqueryismyjam';
-let message = 'Добро пожаловать';
+let message = '';
 
-const userInput = prompt ('Введите пароль администратора jqueryismyjam');
-const normalizeInput = userInput.toLowerCase();
-
-console.log (userInput);
-
-console.log (ADMIN_PASSWORD === normalizeInput)
-
-
+message = prompt ('Введите пароль администратора');
+if (message === null) {
+  console.log("Отменено пользователем");
+} else if (message === ADMIN_PASSWORD) {
+  message = "Добро пожаловать!";
+  console.log("Добро пожаловать!");
+  alert(message);
+} else {
+  message = "Доступ запрещен, неверный пароль!";
+  console.log("Доступ запрещен, неверный пароль!");
+  alert(message);
+}
 
 
 
