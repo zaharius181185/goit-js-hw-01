@@ -11,10 +11,10 @@ do {
   }
 } while (userInput !== null);
 
-if(userInput === null) {
-  message = (`Общая сумма чисел равна ${total}`);
-  alert(message);
-}
+// if(userInput === null) {
+//   message = (`Общая сумма чисел равна ${total}`);
+//   alert(message);
+// }
 
 console.log(message);
 
