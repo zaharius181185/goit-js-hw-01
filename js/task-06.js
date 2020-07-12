@@ -4,17 +4,17 @@ let userInput;
 
 do {
   userInput = prompt("Введите число");
-
-  if (userInput === null) {
-    message = (`Общая сумма чисел равна ${total}`);
-    alert(message);
-  } else if (userInput === isNaN(userInput)) {
-    alert('Было введено не число, попробуйте еще раз');
-  } else {
+  if(userInput > 0) {
     userInput = Number(userInput);
+    total += userInput;
+    message = (`Общая сумма чисел равна ${total}`);
   }
-  total += userInput;
 } while (userInput !== null);
+
+if(userInput === null) {
+  message = (`Общая сумма чисел равна ${total}`);
+  alert(message);
+}
 
 console.log(message);
 
