@@ -6,12 +6,10 @@ if (message === null) {
   console.log("Отменено пользователем");
 } else if (message === ADMIN_PASSWORD) {
   message = "Добро пожаловать!";
-  console.log("Добро пожаловать!");
-  alert(message);
+  console.log(message);
 } else {
   message = "Доступ запрещен, неверный пароль!";
-  console.log("Доступ запрещен, неверный пароль!");
-  alert(message);
+  console.log(message);
 }
 
 
