@@ -4,19 +4,15 @@ let userInput;
 
 do {
   userInput = prompt("Введите число");
-  if(userInput > 0) {
-    userInput = Number(userInput);
-    total += userInput;
-    message = (`Общая сумма чисел равна ${total}`);
+  if(Number.isNaN(Number(userInput))) {
+    alert('Было введео не число, попробуйте еще раз');
+    continue;
   }
+    total += Number(userInput);
+
 } while (userInput !== null);
 
-// if(userInput === null) {
-//   message = (`Общая сумма чисел равна ${total}`);
-//   alert(message);
-// }
-
-console.log(message);
+alert(`Общая сумма чисел равна ${total}`);
 
 // Напиши скрипт который просит посетителя ввести число в prompt до тех пор, пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме.
 
